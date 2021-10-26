@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*font*/
+@font-face {
+   font-family: ;
+   src: url();
+}
+
+/*Common*/
+body {font-family: roboto, 'Noto sans KR', sans-serif;font-size: 16px;color: #333;}
+.container {width: 90%;margin: auto;}
+
+
+
+
+/*PC*/
+@media all and (min-width: 1200px) {}
+
+/*Tablet*/
+@media all and (max-width: 1199px) {}

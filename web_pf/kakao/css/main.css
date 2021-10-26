@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* font */
+
+
+@font-face {font-family: '노토산스Reg';src: url(../font/NotoSansKR-Regular.woff2)}
+@font-face {font-family: '노토산스Med';src: url(../font/NotoSansKR-Medium.woff2)}
+
+@font-face {font-family: '노토산스Bd';src: url(../font/NotoSansKR-Bold.woff2)}
+@font-face {
+   font-family: '로보토Med';
+   src: url(../font/Roboto-Medium.woff2);
+}
+@font-face {
+   font-family: '노토산스Lgt';
+   src: url(../font/NotoSansKR-Light.woff2);
+}
+
+
+
+body {font-family: '노토산스Reg', '노토산스Med', sans-serif;}
+
+/* common */
+.container {width: 90%;margin: auto;min-width: 1280px;}
+.container:after {display: block;content: "";clear: both;}
+.blind {display: block;width: 0;height: 0;overflow: hidden;visibility: hidden;}
+.clear:after {display: block;content: "";clear: both;}
+
+/* .skip_nav */
+.skip_nav a {display: block;position: absolute;left: -2px;top: -32px;background: #000;
+   border: 0 2px 2px 0 solid #FFF;color: #FFF;line-height: 20px;font-size: 14px;
+   padding: 5px 10px;font-weight: bold;text-decoration: none;margin: 0;}
+.skip_nav a:focus {top: 0;left: 0;}
+
+
+/* header */
+#wrap {}
+#header {}
+#header .inner_header {position: relative;color: #FFF;padding: 13px 0;z-index: 900;}
+
+#header h1 {float: left;}
+#header h1 a {display: block;width: 280px;height: 40px;background: url(../img/logo_enterprise_w.png) no-repeat left center;background-size: 50% auto;}
+#header .inner_header:hover {background: #FFF;color: #000;}
+#header .inner_header:hover h1 {background: url(../img/logo_enterprise_b.png)no-repeat left center;background-size: 50% auto;}
+
+#header .gnb {float:left;position: absolute;left: 280px;transform: translateX(0px);line-height: 30px;}
+#header .gnb li {display:inline-block; margin: 0 40px;line-height: 30px;}
+
+#header .dep2 {display: none;background: #FFF;}
+
+
+#header .side {float: right;line-height: 30px;}
+#header .side:after {display:inline-block;content: "";width: 15px;height: 15px;background: url(../img/ico_pc_200707.png) no-repeat;
+background-position: -30px -30px;background-size: 70px 100px;}
+
+
+/* #header .header_fix {background: #FFF;color: #000;} */
+
+
+/*Footer*/
+#footer {height: 80px;border-top: 1px solid #CCC;position: relative;}
+.inner_footer img {height: 17px;float: left;
+position: absolute;top: 50%;transform: translateY(-50%);display: block;}
+
+.inner_footer ul {}
+.inner_footer li {float: left;font-size: 13px;padding-left: 12px;}
+.inner_footer a {color: #777;}
+.inner_footer a:hover {color: #555;}
+.inner_footer .corp .up_btn {display: inline-block;content: "";background: url(../img/ico_pc_210115.png);background-position: -50px -100px;width: 14px;height: 14px;background-size: 120px 200px;}
+.inner_footer .corp_info ul {display: none;}
+.inner_footer .footer_menu {}
+.inner_footer .footer_menu li:before {display: block; content: "";width: 1px;height: 10px;background: #CCC;float: left;margin-right: 12px;
+   }
+
+.sns_list ul {float: right;}
+.sns_list li {float: left;margin-right: 40px;}
+.sns_list img {display: block;width: 20px;height: 20px;}
+.family_site {float: right;display: block;}
+.family_site ul {display: none;}
+.family_site button {border: 1px solid #CCC;color: #888;
+   padding: 9px 15px 9px 15px;cursor: pointer;font-weight: bold;}
+.family_site button:hover {color: #333;}
+.family_site button:after {content: "+";display: inline-block;margin-left: 45px;
+font-size: 18px;font-weight: lighter;}
+
+
+/*Main*/
+#main video {position: absolute;top: 50%;left: 50%;width: 100%;transform: translate(-50%,-30%);}
+#main .main_visual {position: absolute;top: 0;left: 0;right: 0;}
+#main .main_visual_txt strong {font-size: 170px;}
+#main .main_visual_txt span {font-size: 40px;}
+#main .main_visual_txt {z-index: 300;position: absolute;top: 35%;transform: translateY(-50%);color: #FFF;font-family: '로보토Med';}
+#main .visual_wrap {display:block;padding-top: 60%;overflow: hidden;margin: 0;}
+
+.Kakao_Business {}
+.Kakao_Tech {display: none;}
+.Kakao_Work {display: none;}
+.Kakao_Life {display: none;}
+.Kakao_Future {display: none;}
+.Kakao_Creat {display: none;}
+.Kakao_AI {display: none;}
+.main_visual_txt .Kakao_AI img {width: 200px;height: 100px;}
+
+/*
+@keyframes kakao {
+   0% {}
+   100 {}
+} */
+
+
+
+.content_wrap {margin-top: -22%;margin-bottom: 62px;}
+
+.content_wrap h2 {font-size: 14px;color: #666;font-weight: bold;margin-bottom: 15px;}
+
+.content_wrap .content {float: left;width: calc(33.33333% - 2%);margin: 0 2% 2% 0;}
+.content_wrap .content:hover strong {text-decoration: underline;}
+.content_wrap .content:after {display: block;content: "";clear: both;}
+.content_wrap strong {font-size: 20px;font-family: '노토산스Bd';}
+.content_wrap  span {display:block;color: #999;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-top: 15px;}
+.content_wrap .cont2 strong {font-size: 26px;font-family: '로보토Med';font-weight: bold;}
+.content_wrap .cont2 span {font-size: 14px;color: #555;}
+
+
+.main_content_wrap {margin-bottom: 150px;}
+.main_content_wrap img {width: 100%;margin-bottom: 20px;}
+.main_content {float: left;width: 32%;margin: 0 2% 2% 0;}
+.main_content a {float: left;display:block;}
+.main_content a:after {display: block;content: "";clear: both;}
+.main_content:nth-child(3n),.main_content:nth-child(6n) {margin-right: 0;}
+.main_content strong {font-size: 20px;font-family: '노토산스Bd';}
+.main_content a:hover strong {text-decoration: underline;}
+.main_content p {color: #888;margin-top: 10px;font-family: '노토산스Lgt';}
+

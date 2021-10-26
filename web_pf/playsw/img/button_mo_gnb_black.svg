@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20">
+    <g>
+        <path d="M351 27h-28a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z" data-name="패스 3090" transform="translate(-322 -25)"/>
+        <path d="M351 36h-28a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z" data-name="패스 3091" transform="translate(-322 -25)"/>
+        <path d="M351 45h-28a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z" data-name="패스 3092" transform="translate(-322 -25)"/>
+    </g>
+</svg>

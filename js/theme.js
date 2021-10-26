@@ -195,7 +195,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
-$(function() {
+/*$(function() {
     //----- OPEN
     $('[data-popup-open]').on('click', function(e)  {
         var targeted_popup_class = jQuery(this).attr('data-popup-open');
@@ -211,4 +211,4 @@ $(function() {
 
         e.preventDefault();
     });
-});
+});*/

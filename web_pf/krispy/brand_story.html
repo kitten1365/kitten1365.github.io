@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>브랜드스토리_와이어프레임</title>
+		<style>
+		/*
+			1. 좌우 정렬 박스 (float)
+			2. 플로팅 박스 부모 요소를 clear
+		*/
+			#wrap {}
+			.container {width: 980px;margin: auto;}
+			.container:after {display: block;content:"";clear: both;}
+			#header {background: Aquamarine;height: 100px;}
+			#main {}
+			.location {background: Chocolate;line-height: 34px;}
+			.main_contetnt {}
+				.lnb_box {background: DarkSalmon;float: left;width: 180px;
+				height: 300px;}
+				.main_content_box {background: Gold;float: right;width: 760px;
+				height: 700px;}
+			#footer {}
+			.footer_content {background: LightGreen;height: 50px;}
+			.corp_info {background: Pink;height: 80px;}
+		</style>
+		<script src="https://kit.fontawesome.com/ee791f80a0.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header id="header">
+				<div class="container">header</div>
+			</header><!--#header end-->
+			<div id="main">
+				<div class="location">
+					<div class="container">location</div>
+				</div><!--.location end-->
+				<div class="main_content">
+					<div class="container">
+						<div class="lnb_box">Local Nav</div><!-- .lnb_box end -->
+						<div class="main_content_box">Page_content</div><!-- .main_content_box -->
+					</div><!--.container end-->
+				</div><!-- main_content end -->
+			</div>
+			<div id="footer">
+				<div class="footer_content">
+					<div class="container">footer_content</div>
+				</div><!-- .footer_content end -->
+				<div class="corp_info">
+					<div class="container">corp_info</div>
+				</div><!--.corp_info end-->
+			</div><!--#footer end-->
+		</div><!-- #wrap end -->
+	</body>
+</html>
+<!--
+웹페이지 레이아웃 구성하기
+1. #wrap 박스 만들기
+2. 머릿글, 본문, 바닥글 3영역 만들기
+	#header, #main, #footer 3행
+3. 각각의 영역에서 행으로 나뉘는 영역 찾기
+4. 각 행 안에 .container 만들기
+5. .container 안에 좌우 배치되는 영역(박스, 그룹) 만들기
+-->

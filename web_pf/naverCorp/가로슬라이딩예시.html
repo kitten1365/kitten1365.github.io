@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가로슬라이딩 예제</title>
+  <style>
+    body {margin: 0;}
+    .slider {}
+    .slider:after {content:"";display: block;clear: both;}
+    .slide1, .slide2, .slide3, .slide4 {float: left;}
+
+    .box1 {border: 5px solid red;overflow: hidden;width: 533px;}
+    .box1 .slider {width: 2132px;margin-left: -300px;}
+    .box1 .slider .slide1 {}
+    .box1 .slider .slide2 {}
+    .box1 .slider .slide3 {}
+    .box1 .slider .slide4 {}
+    
+    .box2 {margin: 100px 0;width: 100vw;overflow: hidden;}
+    .box2 .slider {width: 400vw;}
+    .box2 .slider .slide1 {float: left;width: 100vw;}
+    .box2 .slider .slide2 {float: left;width: 100vw;}
+    .box2 .slider .slide3 {float: left;width: 100vw;}
+    .box2 .slider .slide4 {float: left;width: 100vw;}
+    .box2 img {width: 100%;display: block;}
+
+    ul, li {list-style: none;margin: 0;padding: 0;}
+    .ex1 {margin: 100px 0;border: 5px solid green;width: 590px;overflow: hidden;}
+    .ex1 ul {width: 2360px;margin-left: -1180px;}
+    .ex1 ul:after {content:"";display: block;clear: both;}
+    .ex1 li {background: gold;float: left;}
+
+
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="slider">
+      <div class="slide1"><img src="img/main/img_main_content3.png" alt=""></div>
+      <div class="slide2"><img src="img/main/img_main_content4.png" alt=""></div>
+      <div class="slide3"><img src="img/main/img_main_content5.png" alt=""></div>
+      <div class="slide4"><img src="img/main/img_main_content6.png" alt=""></div>
+    </div>
+  </div>
+
+  <div class="ex1">
+    <ul>
+      <li><img src="../jiran/img/banner_1.jpg" alt=""></li>
+      <li><img src="../jiran/img/banner_2.jpg" alt=""></li>
+      <li><img src="../jiran/img/banner_3.jpg" alt=""></li>
+      <li><img src="../jiran/img/banner_4.jpg" alt=""></li>
+    </ul>
+  </div>
+
+  <div class="box2">
+    <div class="slider">
+      <div class="slide1"><img src="img/main/img_main_slide3.jpg" alt=""></div>
+      <div class="slide2"><img src="img/main/img_main_slide5.jpg" alt=""></div>
+      <div class="slide3"><img src="img/main/img_main_slide6.jpg" alt=""></div>
+      <div class="slide4"><img src="img/main/img_main_slide7.jpg" alt=""></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+
+/*common*/
+.container {margin: auto;position: relative;}
+.blind {display: block;width: 0;height: 0;overflow: hidden;visibility: hidden;}
+.clrfix:after {content: "";display: block;clear: both;}
+
+
+/*skip_nav*/
+.skip_nav a {display: block;position: absolute;top: -30px;left: 0;}
+.skip_nav a:focus {top: 0;}
+
+/*header*/
+header {height: 100px;}
+header h1 a {display: block;background: url(../img/logo.png);width: 150px;height: auto;background-size: contain;}
+header .gnb>li {float: left;}
+header .gnb .dep2 {display: none;}
